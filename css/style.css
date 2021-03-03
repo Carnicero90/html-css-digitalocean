@@ -23,6 +23,11 @@ a {
     padding-bottom: 20px;
 }
 
+main a {
+    color: #2285fd;
+
+}
+
 
 /* HEADER */
 .nav_header, .burger {
@@ -32,7 +37,7 @@ a {
 }
 nav li, .nav_header a, .burger {
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 .nav_header img {
@@ -55,30 +60,61 @@ nav li {
 
 /* MAIN */
 
+/* Intro */
 .intro {
-    background-color: aqua;
+    /* TEST */
+    background-color: blue;
+}
+/* Intro left-col */
+h1 {
+    color: white;
+    font-size: 300%;
 }
 .banner {
-    color: white;
+    color: #baccff;
+    font-size: 120%;
 }
+
+
+/* Intro right-col */
 
 .log-box {
     background: white;
-    padding: 5%;
+    padding: 5% 5%;
+    border-radius: 10px;
 }
 
+.login-form .form-control::placeholder {
+    color: #757575;
+}
+.blue-button {
+    background-color: #2285fd;
+    color: white;
+}
+
+.white-button {
+    color: #626262;
+    font-weight: bold;
+    box-shadow: 1px 1px 1px #656565;
+}
+.log-box [class*="-button"] {
+    margin-bottom: 10px;
+}
 .button-wrapper {
     position: relative;
 }
-
 .left-button {
     height: 1em;
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translate(0, -50%);
-
 }
+
+.log-box p a {
+    text-decoration: underline;
+}
+
 
 .logo-list li {
     display: inline-block;
