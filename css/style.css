@@ -19,13 +19,25 @@ a {
 /* COMMON */
 .tb-padder {
     /* TEST */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 main a {
     color: #2285fd;
 
+}
+
+.bg-grey {
+    background-color: #f3f5f9;
+}
+
+.chevroned_link::after {
+    padding-left: 5px;
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 90%;
 }
 
 
@@ -116,9 +128,22 @@ h1 {
 }
 
 
+/* Customers */
+.customers h3 {
+    font-size: 90%;
+    text-transform: uppercase;
+}
+.customers p {
+    font-size: 75%;
+}
+
 .logo-list li {
     display: inline-block;
     width: 48%;
+    vertical-align: middle;
+}
+.logo-list img {
+    margin: auto;
 }
 /* Deploy (still testing) */
 .deploy-steps {
@@ -130,6 +155,16 @@ h1 {
 }
 
 
+.dot {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid blue;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+
 
 
 /* Queries */
@@ -137,8 +172,7 @@ h1 {
 
 @media screen and (min-width: 800px) {
     .logo-list li {
-        width: 15%;
-        padding-right: 3%;
+        width: calc(100% / 6 - 4px);
         /* a caso, non ricordo i breakpoint */
     }
 }
