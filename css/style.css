@@ -5,22 +5,41 @@
     height: 200px;
     border: 1px solid black;
 }
+
 ul {
     padding-left: 0;
 }
+
 li {
     list-style-type: none;
 }
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
 /* COMMON */
+body {
+    color: #818ba2;
+}
+
+h2,
+h3,
+h4 {
+    color: #031c4e;
+}
+
 .tb-padder {
     /* TEST */
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.thinner_cont {
+    width: 90%;
+    margin: auto;
+    /* questo credo verrà cambiato, preferendogli dare padding a contenuto colonne+media query */
 }
 
 main a {
@@ -30,6 +49,11 @@ main a {
 
 .bg-grey {
     background-color: #f3f5f9;
+}
+
+.bg-blue {
+    background-color: blue;
+    color: white;
 }
 
 .chevroned_link::after {
@@ -42,20 +66,26 @@ main a {
 
 
 /* HEADER */
-.nav_header, .burger {
+.nav_header,
+.burger {
     font-size: 120%;
     font-weight: bold;
     color: #2285fd;
 }
-nav li, .nav_header a, .burger {
+
+nav li,
+.nav_header a,
+.burger {
     display: inline-block;
     padding-top: 30px;
     padding-bottom: 20px;
 }
+
 .nav_header img {
     vertical-align: middle;
     height: 1.4em;
 }
+
 nav li {
     padding-left: 3%;
     color: #0d2554;
@@ -77,11 +107,13 @@ nav li {
     /* TEST */
     background-color: blue;
 }
+
 /* Intro left-col */
 h1 {
     color: white;
     font-size: 300%;
 }
+
 .banner {
     color: #baccff;
     font-size: 120%;
@@ -99,6 +131,7 @@ h1 {
 .login-form .form-control::placeholder {
     color: #757575;
 }
+
 .blue-button {
     background-color: #2285fd;
     color: white;
@@ -109,12 +142,15 @@ h1 {
     font-weight: bold;
     box-shadow: 1px 1px 1px #656565;
 }
+
 .log-box [class*="-button"] {
     margin-bottom: 10px;
 }
+
 .button-wrapper {
     position: relative;
 }
+
 .left-button {
     height: 1em;
     position: absolute;
@@ -133,6 +169,7 @@ h1 {
     font-size: 90%;
     text-transform: uppercase;
 }
+
 .customers p {
     font-size: 75%;
 }
@@ -142,16 +179,25 @@ h1 {
     width: 48%;
     vertical-align: middle;
 }
+
 .logo-list img {
     margin: auto;
 }
-/* Deploy (still testing) */
-.deploy-steps {
-    margin-left: 10%;
-    border-left: 1px solid black;
+
+/* Deploy */
+
+.section-header {
+    padding-bottom: 8%;
 }
+
 .deploy-steps li {
-    padding: 7% 5% ;
+    padding: 5% 4%;
+}
+
+.deploy-steps {
+    border-left: 1px solid;
+    border-color: inherit;
+    margin-bottom: 30px;
 }
 
 
@@ -164,7 +210,55 @@ h1 {
     margin: 5px;
 }
 
+/* Regions */
+/* da spostare su container ad hoc */
+.regions .row {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
+.regions .row .row {
+    border-bottom: 1px solid white;
+}
+
+/* Feedbacks */
+.feedbacks .log-box img {
+    max-height: 90px;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.feedbacks .log-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.feedbacks .log-box>* {
+    padding-bottom: 15px;
+}
+
+/* Aggressive marketing */
+
+.aggressive-marketing {
+    background: blue;
+    color: white;
+}
+
+.aggressive-marketing .btn {
+    color: blue;
+    background-color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #031c4ee2;
+    color: #8b94a9;
+}
+
+footer h5 {
+    color: white;
+}
 
 
 /* Queries */
@@ -174,5 +268,16 @@ h1 {
     .logo-list li {
         width: calc(100% / 6 - 4px);
         /* a caso, non ricordo i breakpoint */
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .thinner_cont {
+        width: 100%;
+    }
+
+    h1,
+    h2 {
+        font-size: 190%;
     }
 }
