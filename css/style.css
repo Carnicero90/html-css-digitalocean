@@ -1,0 +1,62 @@
+.debug [class*="col-"] {
+    background: pink;
+    height: 200px;
+    border: 1px solid black;
+}
+ul {
+    padding-left: 0;
+}
+li {
+    list-style-type: none;
+}
+
+/* COMMON */
+.tb-padder {
+    /* TEST */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* HEADER */
+
+nav li {
+    display: inline-block;
+}
+
+nav img {
+    vertical-align: baseline;
+}
+
+nav {
+    /* TEST */
+    background-color: antiquewhite;
+}
+
+
+/* MAIN */
+
+.intro {
+    background-color: aqua;
+}
+.banner {
+    color: white;
+}
+
+.log-box {
+    background: white;
+    padding: 5%;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.left-button {
+    height: 1em;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+}
