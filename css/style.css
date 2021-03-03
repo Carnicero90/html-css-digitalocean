@@ -1,3 +1,5 @@
+/* colors: #2285fd */
+
 .debug [class*="col-"] {
     background: pink;
     height: 200px;
@@ -9,6 +11,10 @@ ul {
 li {
     list-style-type: none;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 /* COMMON */
 .tb-padder {
@@ -19,19 +25,32 @@ li {
 
 
 /* HEADER */
-
-nav li {
+.nav_header, .burger {
+    font-size: 120%;
+    font-weight: bold;
+    color: #2285fd;
+}
+nav li, .nav_header a, .burger {
     display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.nav_header img {
+    vertical-align: middle;
+    height: 1.4em;
+}
+nav li {
+    padding-left: 3%;
+    color: #0d2554;
 }
 
-nav img {
-    vertical-align: baseline;
+.dropdown::after {
+    padding-left: 5px;
+    content: "\f078";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
 }
 
-nav {
-    /* TEST */
-    background-color: antiquewhite;
-}
 
 
 /* MAIN */
@@ -59,4 +78,31 @@ nav {
     top: 50%;
     transform: translate(0, -50%);
 
+}
+
+.logo-list li {
+    display: inline-block;
+    width: 48%;
+}
+/* Deploy (still testing) */
+.deploy-steps {
+    margin-left: 10%;
+    border-left: 1px solid black;
+}
+.deploy-steps li {
+    padding: 7% 5% ;
+}
+
+
+
+
+/* Queries */
+/* TEST */
+
+@media screen and (min-width: 800px) {
+    .logo-list li {
+        width: 15%;
+        padding-right: 3%;
+        /* a caso, non ricordo i breakpoint */
+    }
 }

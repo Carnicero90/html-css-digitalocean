@@ -17,33 +17,32 @@
         <nav>
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-3">
-                        <img src="img/logo-small.svg" alt="">DigitalOcean
-                        <!-- qua poi da wrappare -->
-                    </div>
-                    <div class="col-xs-9">
-                        <div class="visible-md visible-lg col-md-6 text-center">
-                            <ul>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                            </ul>
-                        </div>
-                        <div class="visible-md visible-lg col-md-6 text-right">
-                            <ul>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                                <li><a href="">link</a></li>
-                            </ul>
-                        </div>
-                        <div class="visible-xs visible-sm col-xs-12 text-right">
-                            <i class="fas fa-bars burger"></i>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="nav_header">
+                            <a href=""> <img src="img/logo-small.svg" alt=""> DigitalOcean
+                            </a>
                         </div>
                     </div>
-                    <!-- <div class="hidden-xs col-sm-6">bla</div>
-                <div class="col-xs-6 visible-xs visible-md text-right"><i class="fas fa-bars burger"></i></div> -->
+                    <div class="visible-md visible-lg col-md-5">
+                        <ul>
+                            <li><a href="" class="dropdown">Products</a></li>
+                            <li><a href="">Customers</a></li>
+                            <li><a href="" class="dropdown">Community
+                            </a></li>
+                            <li><a href="">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="visible-md visible-lg col-md-4 text-right">
+                        <ul>
+                            <li><a href="">Docs</a></li>
+                            <li><a href="" class="dropdown">Support</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="" class="">Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <div class="visible-xs visible-sm col-xs-6 text-right">
+                        <a href="" class="burger"><i class="fas fa-bars"></i></a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -55,15 +54,29 @@
                     <div class="col-sm-6">
                         <div class="banner">
                             <h1>The simplest cloud platform for developers & teams</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio debitis nesciunt ratione libero, sapiente ab cumque modi? Ipsam possimus, necessitatibus excepturi harum, dolores impedit iste repellendus ipsum ducimus atque similique.</p>
+                            <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean.
+                                We make managing infrastrucutre easy for teams and businesses, whether you're running
+                                one virtual machine or ten thousand.</p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="log-box text-center">
-                            <h2>Deploy your app in seconds. <a href="">Get started now.</a></h2>
+                            <h2>Deploy your app in seconds. <br />
+                                <!--qua magari poi do display block al link !-->
+                                <a href="">Get started now.</a>
+                            </h2>
+                            <form class="login-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                            </form>
                             <a href="" class="btn btn-default btn-block">bottone</a>
                             <div class="button-wrapper">
-                                <a href="" class="btn btn-default btn-block"><img src="img/google-icon.png" alt="" class="left-button"> bottone</a>
+                                <a href="" class="btn btn-default btn-block"><img src="img/google-icon.png" alt=""
+                                        class="left-button"> bottone</a>
                             </div>
                             <p>By signing up you agree to the <a href="">Terms of Service</a>.</p>
                         </div>
@@ -74,6 +87,78 @@
 
         </section>
 
+        <section class="bg-grey text-center">
+            <h3>blabla</h3>
+            <div class="container">
+                <ul class="logo-list">
+                    <li><img src="img/docker.svg" alt=""></li>
+                    <li><img src="img/gitlab.svg" alt=""></li>
+                    <li><img src="img/slack.svg" alt=""></li>
+                    <li><img src="img/hashicorp.svg" alt=""></li>
+                    <li><img src="img/hashicorp.svg" alt=""></li>
+                    <li><img src="img/splunk.svg" alt=""></li>
+                </ul>
+            </div>
+            <p><a href="">View customer stories</a></p>
+        </section>
+        <section class="deploy">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <ul class="deploy-steps">
+                            <li>testo</li>
+                            <li>testo</li>
+                            <li>testo</li>
+                            <li>testo</li>
+                            <li>testo</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="step">
+                                <img src="img/one-click.svg" alt="" class="icon">
+                                <h4>
+                                    prova
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero pariatur
+                                    tempora maxime doloribus numquam inventore </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="step">
+                                <img src="img/one-click.svg" alt="" class="icon">
+                                <h4>
+                                    prova
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero pariatur
+                                    tempora maxime doloribus numquam inventore </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="step">
+                                <img src="img/one-click.svg" alt="" class="icon">
+                                <h4>
+                                    prova
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero pariatur
+                                    tempora maxime doloribus numquam inventore </p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="step">
+                                <img src="img/one-click.svg" alt="" class="icon">
+                                <h4>
+                                    prova
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique libero pariatur
+                                    tempora maxime doloribus numquam inventore </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 </body>
 
