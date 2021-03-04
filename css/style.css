@@ -32,6 +32,7 @@ a {
 body {
     color: #818ba2;
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 h2,
@@ -86,9 +87,18 @@ main a {
     color: #2285fd;
 }
 
+.custom-button {
+    border: 1px solid #2285fd;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #2285fd;
+
+}
+
 nav {
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+    line-height: 25px;
 }
 
 .nav_header img {
@@ -271,6 +281,60 @@ footer p.lighter {
 
 footer h5 {
     color: white;
+}
+
+/* FIXED */
+.pesky-shark {
+    height: 100px;
+    z-index: 100000000000000;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.pesky-shark .question {
+    display: inline-block;
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 5px;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.triangle {
+    border: 10px solid transparent;
+    border-left-color: white;
+    width: 0;
+    position: absolute;
+    right: -20px;
+    top: 60px;
+}
+
+.mascotte {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.notifs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: red;
+    color: white;
+    width: 35px;
+    height: 35px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mascotte img {
+    height: 100%;
 }
 
 
