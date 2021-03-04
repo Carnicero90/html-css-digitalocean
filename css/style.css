@@ -16,7 +16,6 @@
 .slide-content {
     width: 50%;
     margin: auto;
-    height: auto;
 
 }
 
@@ -37,21 +36,20 @@ a {
 body {
     color: #818ba2;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
 }
 
 h2,
 h3,
 h4 {
     color: #031c4e;
+    font-weight: bolder;
 }
 
-.bg-blue h2 {
-    color: white;
+main p {
+    font-size: 120%;
 }
 
 .tb-padder {
-    /* TEST */
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -61,7 +59,10 @@ h4 {
     margin: auto;
 }
 
-main a {
+main a,
+.burger,
+.nav_header,
+.custom-button {
     color: #2285fd;
 
 }
@@ -79,6 +80,10 @@ main a {
     color: white;
 }
 
+.bg-blue h2 {
+    color: white;
+}
+
 .chevroned_link::after {
     padding-left: 5px;
     content: "\f054";
@@ -93,15 +98,12 @@ main a {
 .burger {
     font-size: 120%;
     font-weight: bold;
-    color: #2285fd;
 }
 
 .custom-button {
     border: 1px solid #2285fd;
     border-radius: 5px;
     padding: 8px 10px;
-    color: #2285fd;
-
 }
 
 nav {
@@ -215,7 +217,7 @@ h1 {
 /* Deploy */
 
 .section-header {
-    padding-bottom: 8%;
+    padding-bottom: 30px;
 }
 
 .deploy-steps li {
@@ -294,19 +296,19 @@ footer h5 {
 
 /* FIXED */
 .pesky-shark {
-    height: 100px;
-    z-index: 100000000000000;
+    height: 150px;
+    z-index: 1;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 1%;
+    right: 2%;
+
 }
 
 .pesky-shark .question {
     display: inline-block;
-    width: 30%;
-    padding-left: 15px;
-    padding-right: 5px;
-    height: 100%;
+    width: 200px;
+    padding: 10px;
+    height: 100px;
     background-color: white;
     position: relative;
     border-radius: 10px;
@@ -322,7 +324,7 @@ footer h5 {
 }
 
 .mascotte {
-    height: 100%;
+    height: 100px;
     display: inline-block;
     position: relative;
 }
@@ -353,6 +355,10 @@ footer h5 {
 @media screen and (max-width: 799px) {
     .logo-list li {
         width: 48%;
+    }
+
+    .slide-content {
+        width: 80%;
     }
 }
 
