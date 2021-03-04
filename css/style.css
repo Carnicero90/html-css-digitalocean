@@ -31,6 +31,7 @@ a {
 /* COMMON */
 body {
     color: #818ba2;
+    font-family: 'Inter', sans-serif;
 }
 
 h2,
@@ -185,8 +186,6 @@ h1 {
 }
 
 .logo-list li {
-    display: inline-block;
-    width: 48%;
     vertical-align: middle;
 }
 
@@ -278,10 +277,9 @@ footer h5 {
 /* Queries */
 /* TEST */
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 799px) {
     .logo-list li {
-        width: calc(100% / 6 - 4px);
-        /* a caso, non ricordo i breakpoint */
+        width: 48%;
     }
 }
 
