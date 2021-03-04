@@ -1,4 +1,8 @@
-/* colors: #2285fd */
+/*DEBUG */
+span.test {
+    position: relative;
+    bottom: -70px;
+}
 
 .debug [class*="col-"] {
     background: pink;
@@ -28,6 +32,10 @@ h2,
 h3,
 h4 {
     color: #031c4e;
+}
+
+.bg-blue h2 {
+    color: white;
 }
 
 .tb-padder {
@@ -105,7 +113,8 @@ nav li {
 /* Intro */
 .intro {
     /* TEST */
-    background-color: blue;
+    background: url("../img/ms-jumbo.jpg");
+    background-size: cover;
 }
 
 /* Intro left-col */
