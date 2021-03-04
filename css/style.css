@@ -81,12 +81,9 @@ main a {
     color: #2285fd;
 }
 
-nav li,
-.nav_header a,
-.burger {
-    display: inline-block;
+nav {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 .nav_header img {
@@ -95,7 +92,7 @@ nav li,
 }
 
 nav li {
-    padding-left: 3%;
+    /* padding-left: 3%; */
     color: #0d2554;
 }
 
