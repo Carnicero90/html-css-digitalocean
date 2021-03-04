@@ -348,6 +348,7 @@ footer h5 {
 
     .thinner_cont {
         width: 100%;
+        margin-left: -15px;
     }
 
     h1,
