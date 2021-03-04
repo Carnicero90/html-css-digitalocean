@@ -128,12 +128,11 @@ nav li {
 /* Intro left-col */
 h1 {
     color: white;
-    font-size: 300%;
+    font-size: 360%;
 }
 
 .banner {
     color: #baccff;
-    font-size: 120%;
 }
 
 
@@ -349,6 +348,7 @@ footer h5 {
     .thinner_cont {
         width: 100%;
         margin-left: -15px;
+        /* temo sia una soluzione stupida, tuttavia */
     }
 
     h1,
