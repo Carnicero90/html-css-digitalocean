@@ -181,15 +181,6 @@ h1 {
 
 
 /* Customers */
-.customers h3 {
-    font-size: 90%;
-    text-transform: uppercase;
-}
-
-.customers p {
-    font-size: 75%;
-}
-
 .logo-list li {
     vertical-align: middle;
 }
@@ -270,7 +261,7 @@ footer {
     color: #a6adbd;
 }
 
-footer p.lighter {
+footer span.lighter {
     color: #8b94a9;
 }
 
