@@ -363,6 +363,12 @@ footer h3 {
         /* temo sia una soluzione stupida, tuttavia */
     }
 
+    /* TEST */
+    /* !IMPORTANT: sto solo testando per curiosita' personale dei casi d'uso in
+        cui "!important" potrebbe effettivamente risultarmi
+        utile/sensato, non lo lascio nella versione finale e in generale
+        evito proprio di usarlo. */
+
     body *:not(h1, h2) {
         font-size: 100% !important;
     }
