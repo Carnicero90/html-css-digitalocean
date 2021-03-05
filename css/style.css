@@ -263,7 +263,7 @@ footer {
 
 }
 
-footer *:not(img) {
+footer [class^="col-"]* {
     padding-bottom: 15px;
 }
 
