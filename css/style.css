@@ -369,12 +369,30 @@ footer h3 {
         utile/sensato, non lo lascio nella versione finale e in generale
         evito proprio di usarlo. */
 
-    body *:not(h1, h2) {
-        font-size: 100% !important;
+    /* body *:not(h1, h2) {
+        font-size: 1em !important;
     }
 
     h1,
     h2 {
-        font-size: 150% !important;
+        font-size: 160% !important;
+    } */
+
+    .intro.tb-padder h1 {
+        font-size: 300%;
+    }
+
+    body,
+    body [class*=""] {
+        font-size: 100%;
+    }
+
+    /* Test di possibili soluzioni alternative all'uso di !important
+        per casi d'uso del genere,
+        che tuttavia sembrano effettivamente meno pratiche */
+    h1,
+    h2,
+    h3 {
+        font-size: 150%;
     }
 }
