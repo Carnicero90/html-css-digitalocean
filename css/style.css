@@ -1,22 +1,4 @@
 /* TEST */
-
-.slide-arrow {
-    font-size: 150%;
-    padding: 10px;
-
-}
-
-[class^="slide-"] {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.slide-content {
-    width: 50%;
-    margin: auto;
-
-}
-
 /* COMMON */
 body {
     color: #818ba2;
@@ -44,16 +26,45 @@ main p {
     margin: auto;
 }
 
+/* Common .slide_show */
+
+.dot {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #006aff;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.dot-active {
+    background-color: #006aff;
+}
+
+.slide-arrow {
+    font-size: 150%;
+    padding: 10px;
+}
+
+[class^="slide-"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.slide-content {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* End Common  .slide_show */
+
 main a,
 .burger,
 .nav_header,
 .custom-button {
     color: #2285fd;
 
-}
-
-.dot-active {
-    background-color: blue;
 }
 
 .bg-grey {
@@ -103,7 +114,6 @@ nav {
 }
 
 nav li {
-    /* padding-left: 3%; */
     color: #0d2554;
 }
 
@@ -120,7 +130,6 @@ nav li {
 
 /* Intro */
 .intro {
-    /* TEST */
     background: url("../img/ms-jumbo.jpg");
     background-size: cover;
 }
@@ -205,18 +214,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-
-.dot {
-    display: inline-block;
-    width: 1.2em;
-    height: 1.2em;
-    border: 2px solid blue;
-    border-radius: 50%;
-    margin: 5px;
-}
-
 /* Regions */
-/* da spostare su container ad hoc */
 .regions .row .row {
     border-bottom: 1px solid white;
     margin: 15px 10px;
@@ -259,13 +257,31 @@ h1 {
 footer {
     background-color: #031c4ee2;
     color: #a6adbd;
+    font-weight: 500;
+    font-size: 110%;
+    /* line-height: 200%; */
+
+}
+
+footer *:not(img) {
+    padding-bottom: 15px;
+}
+
+.copyright::before {
+    content: "\f1f9";
+    font-family: "Font Awesome 5 Free";
+
+}
+
+footer .socials {
+    font-size: 140%;
 }
 
 footer span.lighter {
     color: #8b94a9;
 }
 
-footer h5 {
+footer h3 {
     color: white;
 }
 
@@ -346,4 +362,29 @@ footer h5 {
     h2 {
         font-size: 190%;
     }
+}
+
+
+
+
+
+.test-slide {
+    position: relative;
+}
+
+.pic {
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active:checked {
+    display: none;
+}
+
+.active:active {
+    display: none;
 }
