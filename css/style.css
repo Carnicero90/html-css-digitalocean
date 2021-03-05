@@ -3,6 +3,7 @@
 body {
     color: #818ba2;
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 h2,
@@ -42,8 +43,17 @@ main p {
 }
 
 .slide-arrow {
-    font-size: 150%;
+    font-size: 250%;
     padding: 10px;
+}
+
+.slide-arrow .fa-chevron-left::before {
+    color: #6f7b97;
+
+}
+
+.slide-arrow .fa-chevron-right::before {
+    color: #031c4e;
 }
 
 [class^="slide-"] {
@@ -233,8 +243,8 @@ h1 {
 }
 
 .feedbacks .log-box {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .feedbacks .log-box>* {
@@ -243,19 +253,14 @@ h1 {
 
 /* Aggressive marketing */
 
-.aggressive-marketing {
-    background: blue;
-    color: white;
-}
-
 .aggressive-marketing .btn {
-    color: blue;
+    color: #0d73ff;
     background-color: white;
 }
 
 /* FOOTER */
 footer {
-    background-color: #031c4ee2;
+    background-color: #031c4e;
     color: #a6adbd;
     font-weight: 500;
     font-size: 110%;
